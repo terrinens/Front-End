@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <!-- css 적용 블락
+    border-collapse: collapse; 셀과 셀 사이의 간격을 붙이도록 설정
+     -->
+    <style>
+        table, tr, th, td {
+
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> 테이블 (태그) </h1>
+    <h3> 오늘의 날씨 정보 </h3>
+    <!-- 
+        table
+            tr : 행을 적용
+                -th 열(컬럼)을 적용(컬럼열) <== 첫행에서 커럼명을 넣을때 사용
+                    -기본 : 굵게, 중앙 정렬
+
+            td : 열(컬럼)을 적용
+            
+            aligin = "center" : 정렬
+                     "left(기본값)", "right"
+            
+            width = "50px"
+            height = "20px"
+     -->
+    <table border="1px" align="center">
+         <tr><th width="100px" height="50px"> 지역 </th> <th> 현재기온 </th> <th> 불쾌지수 </th></tr>
+         <tr><td align="center">서울</td> <td align="center">23도</td> <td align="center">80</td></tr>
+         <tr><td width="100px" height="50px">경기도</td> <td>25도</td> <td>80</td></tr>
+         <tr><td width="100px" height="50px">강원도</td> <td>20도</td> <td>80</td></tr>
+         <tr><td width="100px" height="50px">경상도</td> <td>21도</td> <td>80</td></tr>
+         <tr><td width="100px" height="50px">전라북도</td> <td>24도</td> <td>80</td></tr>
+    </table>
+
+    <br><br>
+
+    <h3>
+    <b>일반 게시판 테이블 입니다.</b> 
+    </h3>
+
+    <hr color="green"> <!-- 선을 그음 : <hr> -->
+
+    <table border="1px" align="center">
+        <tr> <th width="100px" height="30px"> No </th> <th width="200px"> 제 목 </th> <th> 글쓴이 </th> <th> 조회수 </th> </tr>
+        <tr> <td> 1 </td> <td> 오늘의 날씨는 </td> <td> 홍길동 </td> <td> 5 </td> </tr>
+        <tr> <td> 2 </td> <td> 오늘의 날씨는2 </td> <td> 홍&nbsp;&nbsp;&nbsp;길동 </td> <td> 10 </td> </tr>
+        <tr> <td bgcolor="#008000"> 3 </td> <td> 오늘의 날씨는3 </td> <td> 홍길동 </td> <td> 30 </td> </tr>
+    </table>
+
+    <br><br>
+
+    <h3> 테이블 태그에서 셀을 병합 하기 </h3>
+    <hr color="blue" width="50%" align="left">
+    <!--
+        rowspan : 행을 합치는것
+        colspan : 열을 합치는것
+     -->
+     <table border="1">
+        <tr> <th> 지역 </th> <th colspan="2"> 현재기온 및 불쾌지수 </th> </tr> 
+        <!--하단에 td 박스가 여러개라면 자동적으로 th 크기가 조절된다.-->
+        <tr> <td rowspan="3"> 서울</td> <td> 30  </td> <td> 80 </td></tr>
+        <tr><td> 25  </td> <td> 75 </td></tr>
+        <tr><td> 31  </td> <td> 65 </td></tr>
+        <tr> <td> 경상도 </td> <td> 28  </td> <td> 77 </td></tr>
+        <tr> <td> 경기도 </td> <td> 33  </td> <td> 88 </td></tr>
+     </table>
+
+     <br><br>
+
+     <h3>테이블 셀 병합 실습</h3>
+     <hr color="red" width="50%" align="left">
+
+     <table border="1">
+        <tr bgcolor = "skyblue">
+            <th>NO</th>
+            <th>과일</th>
+            <th>구매자</th>
+            <th>가격</th>
+            <th>수량</th>
+        </tr>       
+        <tr>
+            <td>1</td>
+            <td rowspan="3" bgcolor="yellow">사과</td>
+            <td rowspan="2">홍길동</td>
+            <td rowspan="2">1,000</td>
+            <td>6</td>
+        </tr> 
+        <tr>
+            <td>2</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="3">이순신 / 2,000 / 8</td>
+        </tr> 
+        <tr>
+            <td>4</td>
+            <td>딸기</td>
+            <td>강감찬</td>
+            <td rowspan="2">4,000</td>
+            <td>9</td>
+        </tr> 
+        <tr>
+            <td>5</td>
+            <td>복숭아</td>
+            <td>신사임당</td>
+            <td>10</td>
+        </tr> 
+     </table>
+</body>
+</html>

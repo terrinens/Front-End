@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <!-- 
         form 태그 내부에 사용되는 태그들 : client =====> Server로 전송
             -input
@@ -26,68 +28,68 @@
             -textarea : 게시판에서 글을 입력 받도록 하는 태그
             -
      -->
-     <!-- 회원 가입시 method = "POST"로 처리 -->
+    <!-- 회원 가입시 method = "POST"로 처리 -->
 
-     <h3 align="center"> 회원 가입 폼 </h3>
-     <hr color="green">
-     <form name="myForm3" action="request.do" method="get">
+    <h3 align="center"> 회원 가입 폼 </h3>
+    <hr color="green">
+    <form name="myForm3" action="request.do" method="get">
 
         <table align="center">
 
-            <tr> 
-                <td align="right"> 이름 : </td> 
+            <tr>
+                <td align="right"> 이름 : </td>
                 <td> <input type="text" name="name" placeholder="이름을 입력해주세요"> </td>
             </tr>
-            
-            <tr> 
-                <td align="right"> 아이디 : </td> 
+
+            <tr>
+                <td align="right"> 아이디 : </td>
                 <td> <input type="text" name="id" placeholder="아이디를 입력해주세요">
-                     <input type="button" name="id_check" value="아이디 중복 체크">
+                    <input type="button" name="id_check" value="아이디 중복 체크">
                 </td>
             </tr>
 
-            <tr> 
-                <td align="right"> 패스워드 : </td> 
+            <tr>
+                <td align="right"> 패스워드 : </td>
                 <td> <input type="password" name="pass" placeholder="비밀번호를 입력해주세요"> </td>
             </tr>
 
-            <tr> 
-                <td align="right"> 패스워드 확인 : </td> 
+            <tr>
+                <td align="right"> 패스워드 확인 : </td>
                 <td> <input type="password" name="pass2" placeholder="비밀번호를 확인합니다."></td>
             </tr>
 
-            <tr> 
-                <td align="right"> 성별 : </td> 
+            <tr>
+                <td align="right"> 성별 : </td>
                 <!-- type="radio" : 여러 선택중 하나만 선택 
                      ridio는 변수명이 동일하게 처리,
                      value의 값이 변수에 들어감
                 -->
-                <td> 
-                    <input type="radio" name="sex" value="m"> 남성 
+                <td>
+                    <input type="radio" name="sex" value="m"> 남성
                     <input type="radio" name="sex" value="w"> 여성
                     <input type="radio" name="sex" value="w"> 선택안함
                 </td>
             </tr>
 
-            <tr> 
+            <tr>
                 <td align="right"> 취미 : </td>
                 <!-- type = "chekbox" : 여러개 선택 : 변수 이름이 달라야 한다.-->
-                <td> 
-                    <input type="checkbox" name="hobby1" value="m1" > 음악감상 &nbsp; &nbsp;
-                    <input type="checkbox" name="hobby2" value="m2"> 독서 &nbsp; &nbsp; 
-                    <input type="checkbox" name="hobby3" value="m3"> 운동 &nbsp; &nbsp; 
-                    <input type="checkbox" name="hobby4" value="m4"> 등산 &nbsp; &nbsp; 
-                    <input type="checkbox" name="hobby5" value="m5"> 게임 &nbsp; &nbsp; 
+                <td>
+                    <input type="checkbox" name="hobby1" value="m1"> 음악감상 &nbsp; &nbsp;
+                    <input type="checkbox" name="hobby2" value="m2"> 독서 &nbsp; &nbsp;
+                    <input type="checkbox" name="hobby3" value="m3"> 운동 &nbsp; &nbsp;
+                    <input type="checkbox" name="hobby4" value="m4"> 등산 &nbsp; &nbsp;
+                    <input type="checkbox" name="hobby5" value="m5"> 게임 &nbsp; &nbsp;
                 </td>
             </tr>
-            
-            <tr> 
-                <td align="right"> 휴대 전화 : </td> 
+
+            <tr>
+                <td align="right"> 휴대 전화 : </td>
                 <!-- 
                     select : option의 선택지 중에 하나만 선택
                         -option 선택
                  -->
-                <td> 
+                <td>
                     <select name="nation">
                         <option selected value="082"> 대한민국 </option>
                         <option value="006"> 미국 </option>
@@ -107,36 +109,33 @@
                 </td>
             </tr>
 
-            <tr> 
-                <td align="right"> 자기 소개 : </td> 
+            <tr>
+                <td align="right"> 자기 소개 : </td>
                 <!-- 
                     textarea : 긴 글을 작성시 사용 
                         rows : 글의 라인수를 지정
                         cols : 글자수를 지정
                         placeholder : 기본적으로 출력(수정)
                 -->
-                <td> 
+                <td>
                     <textarea name="profile" rows="20" cols="70" placeholder="글을 입력해주세요">
                     </textarea>
                 </td>
             </tr>
-            
-                        <tr> 
-                            <td align="right"> 첨부 파일 : </td> 
-                            <td> <input type="file" name="file> *10MB 까지만 전송 해주세요</td>
-                        </tr>
-                        
-                        <tr> 
-                            <td align="right"> <input type="reset" value="다시작성"></td>
-                            <td align="right"> <input type="submit" value="전송"> </td> 
-                        </tr>
-                        
-                        <tr> 
-                            <td> </td> 
-                            <td> </td>
-                        </tr>
-                    </table>
 
-     </form>
+            <tr>
+            <td align="right"> 첨부 파일 : </td>
+                <td> <input type="file" name="file"> *10MB 까지만 전송 해주세요 </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="reset" value="다시작성">
+                    <input type="submit" value="보내기">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>

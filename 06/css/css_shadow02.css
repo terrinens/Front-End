@@ -1,0 +1,47 @@
+.fidiv {
+    border: 1px solid red;
+    border-collapse: collapse;
+
+    height: 100%;
+    margin: auto;
+}
+
+img {
+    padding: 10px;
+ 
+    /*border: 1px solid red;*/ /* 디버깅 목적으로 추가 */
+    
+    margin: 10px;
+
+    width: auto;
+    height: auto;
+}
+
+img.shadow1 {
+    box-shadow: 10px 10px 10px black; /* 오른쪽이동, 아래로이동, 번짐정도 */
+}
+
+img.shadow2 {
+    box-shadow: 10px -10px 30px black;
+}
+
+img.shadow3 {
+    box-shadow: 10px 10px 10px black;
+}
+
+.fidiv .imgdiv {
+    border: 1px solid red;
+    border-collapse: collapse;
+
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.fidiv .imgdiv div {
+    border: 1px solid blue;
+    border-collapse: collapse;
+
+    width: 30%;
+    margin: auto;
+}

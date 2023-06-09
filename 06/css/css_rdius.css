@@ -1,0 +1,58 @@
+body {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 10px;
+    font-family: 궁서체;
+}
+
+h1.br1{
+    background-color: lime;
+    color: red;
+
+    /* border: 1px solid red; 각각 처리하는게 더 우선순위가 높다.*/
+    border-style: solid; /* 상하좌우, 실선 */
+    border-width: 5px;
+    border-color: green;
+    border-radius: 30%; /* 모서시를 둥글게 처리 */
+
+
+    width: 30%; /* 박스의 전체 크기 */
+    text-align: center;
+    margin: auto;
+}
+
+h1.br2{
+    border: 3px dotted brown;
+    border-radius: 15px 30px; /* 오른쪽 상단, 왼쪽 하단 */
+
+    width: 30%;
+    margin: 30px auto;
+
+    background-color: yellow;
+}
+
+h1.br3{
+    width: 30%;
+    margin: auto;
+    background-color: blueviolet;
+    text-align: center;
+
+    border: 3px dashed yellowgreen;
+    border-top-right-radius: 20px;
+
+}
+
+h1.br4{
+    width: 30%;
+    margin: 30px auto;
+
+    border: 3px solid red;
+    border-top-left-radius: 30px;
+}
+
+h3 {
+    text-align: center;
+}

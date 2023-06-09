@@ -1,0 +1,18 @@
+.v1 {
+    visibility: hidden; /* 숨김 : 공간이 남아있음 */
+    border: 1px solid red;
+}
+
+.v2 {
+    visibility: visible;
+    border: 1px solid red;
+}
+
+.v3 {
+    display: none;  /* 숨김 : 공간도 제거됨 */
+    border: 1px solid red;
+}
+
+.v4 {
+    border: 1px solid red;
+}

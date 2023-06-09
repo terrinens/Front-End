@@ -1,0 +1,23 @@
+.box {
+    width: 150px;
+    height: 150px;
+
+    background-color: greenyellow;
+
+    margin: 10px;
+
+    font-size: x-large;
+
+    margin: 10px;
+
+    /* div 박스에 저장된 아이템을 중앙 정렬 */
+    display: flex; /* flex를 사용해서 정렬 하겠다 */
+    justify-content: center; /* 수평정렬 */
+    align-items: center; /* 수직정렬 */
+
+    float: left;
+}
+
+.clear {
+    clear: both; /* float : left, float:right 모두 초기화 */
+}

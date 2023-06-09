@@ -1,0 +1,78 @@
+body>h3+p {
+    height: 10px;
+}
+
+h3 {
+    border: 1px solid red;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div {
+    margin: 10px auto;
+    /* div 태그 자체를 중앙 정렬 */
+    width: 30%;
+    /* 기본설정은 100% */
+}
+
+div.none {
+    border-style: none;
+}
+
+div.hidden {
+    border-style: hidden;
+}
+
+div.dotted {
+    border-style: dotted;
+}
+
+div.dashed {
+    border-style: dashed;
+}
+
+div.solid {
+    border-style: solid;
+}
+
+div.double {
+    border-style: double;
+}
+
+div.groove {
+    border-style: groove;
+}
+
+div.ridge {
+    border-style: ridge;
+}
+
+div.inset {
+    border-style: inset;
+}
+
+div.outset {
+    border-style: outset;
+}
+
+div.mix {
+    border-style: dotted dashed solid double;
+}
+
+div.mix2 {
+    border-top: 2px dotted red; /* 상단적용 */
+    border-right: 2px dashed yellow;
+    border-bottom: 2px solid blue;
+    border-left: 2px double green;
+}
+
+h1.my1 {
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+
+    padding : 15px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}

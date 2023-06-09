@@ -1,0 +1,16 @@
+#grad1 {
+    height: 70px;
+    background: red;
+    background: linear-gradient(to top, red, yellow);
+}
+
+#grad2 {
+    height: 70px;
+    background: linear-gradient(90deg, red, yellow, blue);
+}
+
+#grad3 {
+    height: 70px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    opacity: 0.3;
+}

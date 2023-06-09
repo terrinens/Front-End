@@ -1,0 +1,20 @@
+div-case1 > div-opt1 div {
+    width: 150px;
+    height: 150px;
+
+    background-color: goldenrod;
+
+    opacity: 0.8;
+    margin: 15px;
+
+    /* display: inline-block; */
+    float: left;
+}
+
+div-case1 > div-opt1 .clear {
+    clear:both; /* left, right 정렬된 내용을 취소 */
+}
+
+div-case1 > div-opt1+p {
+    height: 50px;
+}

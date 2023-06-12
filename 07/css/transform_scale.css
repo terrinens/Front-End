@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    margin: 50px;
+
+    border: 1px solid red;
+
+    background-color: aqua;
+}
+
+#box1 {
+    width: 300px;
+    height: 300px;
+    
+    transform: scale(0.5, 0.5); /* 크기를 확대 혹은 축소 */
+    border-radius: 50px;
+}
+
+#box2 {
+    transform: scale(2, 1.5); /* width : 2배, height : 1.5배 */
+}

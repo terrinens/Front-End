@@ -1,0 +1,26 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid red;
+
+    background-color: yellow;
+}
+
+.c1:hover { /* 가상 선택자 */
+            /*  부모가 div 이므로 상속되어서 적용 */
+    background: green;
+
+    transform: translate(100px, 100px) rotate(45deg) scale(0.7);
+    transition: 2s;     /* 2초 동안 적용되어라 */
+}
+
+.c2:hover {
+    /* margin: 50px; */
+    
+    width: 300px;
+
+    transition: 0.5s;
+}

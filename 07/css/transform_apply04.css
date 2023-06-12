@@ -1,0 +1,42 @@
+div {
+    width: 100px;
+    height: 50px;
+
+    margin-bottom: 5px;
+
+    color: yellow;
+    background: red;
+
+    border: 1px solid black;
+
+    transition: 3s;
+}
+
+div:hover {
+    width: 400px;
+}
+
+#div1:hover {
+    transition-timing-function: linear;
+}
+
+#div2:hover {
+    transition-timing-function: ease;
+}
+
+#div3:hover {
+    transition-timing-function: ease-in;
+}
+
+#div4:hover {
+    transition-timing-function: ease-out;
+}
+
+#div5:hover {
+    transition-timing-function: ease-in-out;
+}
+
+#div6:hover {
+    transition-timing-function: cubic-bezier(0.1, 0.0, 0.1, 1.0);
+}
+

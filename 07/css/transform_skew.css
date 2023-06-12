@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    margin: 30px;
+
+    background-color: yellowgreen;
+
+    border: 1px solid red;
+}
+
+#box1 {
+    transform: skew(50deg);
+} 
+
+#box2 {
+    transform: skew(-30deg);
+}
+
+#box3 {
+    transform: skew(20deg, 10deg); /* X축 기울기 20도, Y축 기울기 10도*/
+}

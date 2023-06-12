@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transition_apply04 </title>
+    <link rel="stylesheet" href="./css/transform_apply04.css">
+</head>
+<body>
+    <h3> transition-timing-function : 적용시간의 함수를 사용 </h3>
+    <hr>
+    <!-- 
+        transition-timing-function : 
+            -liner : 시작과 끝의 속도가 동일
+            -ease : 감속 시작, 급속 이동, 감속 종료
+            -ease-in : 감속 시작, 급속 종료, 유지됨
+            -ease-out : 동속 시작, 감속으로 끝남
+            -ease-in-out : 감속 시작해서 감속 종료
+            -cubic-bezier(n, n, n, n) : 속도를 지정해서 처리
+     -->
+
+     <div id="div1"> linear </div>
+     <div id="div2"> ease </div>
+     <div id="div3"> ease-in </div>
+     <div id="div4"> ease-out </div>
+     <div id="div5"> ease-in-out </div>
+     <div id="div6"> cubic-bezier </div>
+</body>
+</html>

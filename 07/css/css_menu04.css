@@ -1,0 +1,31 @@
+header {
+    /* postition : fixed    <== 좌측 상단의 [0, 0]
+        -left : 위치
+        -top : 위치
+    */
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    height: 75px;
+    padding: 1rem;
+
+    color: white;
+    font-weight: bold;
+
+    background-color: teal;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body, html {
+    height: 300%;   /* 스크롤을 처리하기 위한 높이를 처리 300% */
+}
+
+main {
+    margin-top: 130px;
+}

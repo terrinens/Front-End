@@ -1,0 +1,26 @@
+/* 
+transition-property : 변화 효과를 적용할 속성을 나열
+transtiion-duration : 변화가 지속되는 시간 지정
+transition-timing-function : 변화 시작과 끝 타임 지정
+transition-delay : 변화 효과를 지연시키는 시간 지정 */
+
+div {
+    width: 100px;
+    height: 100px;
+
+    background-color: orange;
+    
+    transition: 3s;
+}
+
+div:hover {
+    width: 400px;
+    
+    color: white;       /* 글자색 */
+    background: blue;   /* 배경색 */
+
+    transition-duration: 3s;
+    /*  div 박스안에 두면 조건없이 적용되지만 
+        hover는 마우스를 올렸을시에만 적용되기에 마우스를 박스 밖으로 이동시  
+        transition 옵션이 적용되지 않는다.*/
+}

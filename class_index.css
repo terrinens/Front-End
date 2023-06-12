@@ -1,0 +1,17 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    height: 35px;
+    font-weight: bolder;
+}
+
+li .li_li {
+    list-style: decimal;
+    font-weight: none;
+    color: aqua;
+
+    height: 20px;
+}

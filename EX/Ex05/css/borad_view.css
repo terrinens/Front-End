@@ -1,0 +1,18 @@
+main .free_text_box {
+    height: 410px;
+
+    margin-top: 10px;
+    margin-left: 230px;
+    
+    border: 1px solid red;
+}
+
+.free_text_box div.top{
+    height: 30px;
+
+    border-top: 1px solid gray;
+
+    justify-content: center;
+
+    background-color: whitesmoke;
+}

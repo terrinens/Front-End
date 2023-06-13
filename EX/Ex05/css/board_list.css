@@ -132,6 +132,20 @@ div.comm {
 .comm img {
     width: 190px;
 }
+
+.comm ul.comm_list {
+    position: absolute;
+    top: 330px;
+    left: 40px;
+
+    list-style: none;
+}
+
+.comm ul.comm_list a{
+    display: grid;
+
+    height: 30px;
+}
 /* 커뮤니티 상자 끝 */
 
 /* 나머지 상자 시작 */
@@ -227,7 +241,7 @@ section.free_text {
 
 /* main 끝 */
 
-* footer 시작 */
+/* footer 시작 */
 footer {
     position: relative;
     display: flex;
@@ -248,4 +262,5 @@ footer div.img {
     position: absolute;
     right: 0px;   
 }
+
 /* footer 끝 */

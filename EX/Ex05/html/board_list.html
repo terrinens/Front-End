@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유게시판</title>
+    <link rel="stylesheet" href="../css/board_list.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <a href="../index.html"><img src="../img/img/logo.png" alt=""></a></div>
+
+        <nav class="topmenu">
+            <a href="./index.html"> HOME </a> |
+            <a href="#"> LOGIN </a> |
+            <a href="#"> JOIN </a> |
+            <a href="#"> NOTICE </a>
+        </nav>
+
+        <ul class="menu">
+            <img src="../img/img/main_menu_bg.png" alt="">
+            <ul>
+                <a href="./board_list.html"> 자유 게시판 </a>
+
+                <a href="#"> 기타 연주 </a>
+
+                <a href="#"> 공통 구매 </a>
+
+                <a href="#"> 연주회 안내 </a>
+
+                <a href="#"> 회원 게시판 </a>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <aside class="login_box">
+            <!-- 로그인 박스 -->
+            <div class="login_box">
+                <span class="s1"> Member </span>
+                <span class="s2"> LOGIN </span>
+
+                <div class="login">
+                    <input type="text" name="id" size="9">
+                    <input type="text" name="pw" size="9">
+                </div>
+
+                <div class="login_butten">
+                    <a href="#"><img src="../img/img/btn_login.gif" alt=""></a>
+                </div>
+
+                <p class="clear"></p>
+
+                <a href="#" class="newbi"> 회원가입 </a>
+                <a href="#" class="serch">| 아이디/비빌번호 찾기 </a>
+            </div>
+
+            <!-- login인과 방명록 사이의 공간을 위한 div -->
+            <div class="space"></div>
+
+            <div class="comm">
+                <img src="../img/img/sub_menu_bg.png" alt="">
+            </div>
+
+            <div class="space"></div>
+
+            <div class="other">
+                <a href="#"><img src="../img/img/banner1.png" alt=""></a>
+                <a href="#"><img src="../img/img/banner2.png" alt=""></a>
+                <a href="#"><img src="../img/img/banner3.png" alt=""></a>
+            </div>
+        </aside>
+
+        <section class="main">
+            <img src="../img/img/comm.gif" alt="">
+        </section>
+
+        <section class="free_text">
+            자유 게시판
+            <hr>
+            <div class="free_text_in">
+                <p1> ▷ 총 5개의 게시물이 있습니다. </p1>
+
+                <!-- 오른쪽으로 정렬을 위한 코드 -->
+                <div class="search">
+                    <img src="../img/img/select_search.gif" alt="">
+                    <select name="addr">
+                        <option value="001"> 제목 </option>
+                        <option value="002"> 글쓴이 </option>
+                    </select>
+                    <input type="text" name="search" size="15">
+                    <img src="../img/img/search_button.gif" alt="">
+                </div>
+
+                <div>
+                    <table>
+                        <tr>
+                            <th class="no">
+                                번호
+                            <td class="hader"> 제목 </td>
+                            <td class="name"> 글쓴이 </td>
+                            <td class="day"> 일시 </td>
+                            <td class="eay"> 조회수 </td>
+                        <tr>
+                            <td class="no2"> 1 </td>
+                            <td> <a href="#"> 까쓰릉님의 선물인 보드카가 정말 독하네요!!! </a></td>
+                            <td class="name2"> 루바토 </td>
+                            <td class="day2"> 2017-09-20 </td>
+                            <td class="eay2"> 15 </td>
+                        </tr>
+                        <tr>
+                            <td class="no2"> 2 </td>
+                            <td> <a href="#"> 까쓰릉님의 선물인 보드카가 정말 독하네요!!! </a></td>
+                            <td class="name2"> 루바토 </td>
+                            <td class="day2"> 2017-09-20 </td>
+                            <td class="eay2"> 15 </td>
+                        </tr>
+                        <tr>
+                            <td class="no2"> 3 </td>
+                            <td> <a href="#"> 까쓰릉님의 선물인 보드카가 정말 독하네요!!! </a></td>
+                            <td class="name2"> 루바토 </td>
+                            <td class="day2"> 2017-09-20 </td>
+                            <td class="eay2"> 15 </td>
+                        </tr>
+                        </th>
+                        </tr>
+                    </table>
+
+                    <div class="page">
+                        <a href="#"> ◀ 이전 </a>
+                        <a href="#"> 1 </a>
+                        <a href="#"> 다음 ▶</a>
+                    </div>
+
+                    <div class="list">
+                        <a href="../html/board_list.html"><img src="../img/img/list.png" alt=""></a>
+                        <a href="#"> <img src="../img/img/write.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr class="end">
+
+    <footer>
+        <div>
+            <img src="../img/img/logo_footer.gif" alt="">
+        </div>
+        <div>
+            서울시 강남구 삼성동 1234 우 : 1234-1234 <br>
+            TEL : 031-132-1234 Email : email@domain.com <br>
+            COPYTRIGHT⒞ 루바토 ALL RIGHTS RESERVED
+        </div>
+
+        <p class="clear"></p>
+
+        <div class="img">
+            <img src="../img/img/facebook.gif" alt="">
+            <img src="../img/img/blog.gif" alt="">
+            <img src="../img/img/twitter.gif" alt="">
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

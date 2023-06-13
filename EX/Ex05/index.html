@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="./css/index_page.css">
+</head>
+
+<body>
+    <!-- 
+        로그인 박스는 그라데이션으로, 자유게시판 클릭이 해당 페이지 이동, 
+        자유 게시판 (이전, 다음) 버튼은 디자인만
+        목록 클릭시 자유게시판 이동
+    -->
+    <header>
+        <div class="logo"> <a href="./index.html"><img src="./img/img/logo.png" alt=""></a></div>
+
+        <nav class="topmenu">
+            <a href="./index.html"> HOME </a> |
+            <a href="#"> LOGIN </a> |
+            <a href="#"> JOIN </a> |
+            <a href="#"> NOTICE </a>
+        </nav>
+
+        <ul class="menu">
+            <img src="./img/img/main_menu_bg.png" alt="">
+            <ul>
+                <a href="./html/board_list.html"> 자유 게시판 </a>
+
+                <a href="#"> 기타 연주 </a>
+
+                <a href="#"> 공통 구매 </a>
+
+                <a href="#"> 연주회 안내 </a>
+
+                <a href="#"> 회원 게시판 </a>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <aside class="login_box">
+            <!-- 로그인 박스 -->
+            <div class="login_box">
+                <span class="s1"> Member </span>
+                <span class="s2"> LOGIN </span>
+
+                <div class="login">
+                    <input type="text" name="id" size="9">
+                    <input type="text" name="pw" size="9">
+                </div>
+
+                <div class="login_butten">
+                    <a href="#"><img src="./img/img/btn_login.gif" alt=""></a>
+                </div>
+
+                <p class="clear"></p>
+
+                <a href="#" class="newbi"> 회원가입 </a>
+                <a href="#" class="serch">| 아이디/비빌번호 찾기 </a>
+            </div>
+
+            <!-- login인과 방명록 사이의 공간을 위한 div -->
+            <div class="space"></div>
+
+            <!-- 방명록 -->
+            <div class="ctext">
+
+                <span class="f1"> 방명록 </span>
+                <hr>
+
+                <ul>
+                    <li><a href="#"> 안녕하세요! </a></li>
+                    <li><a href="#"> 안녕하세요! </a></li>
+                    <li><a href="#"> 안녕하세요! </a></li>
+                    <li><a href="#"> 안녕하세요! </a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <section class="main">
+            <img src="./img/img/main_img.png" alt="">
+        </section>
+
+        <section class="case">
+            <ul>
+                <img src="./img/img/latest1.gif" alt="">
+                <a href="#" class="more"> more ▶ </a>
+
+                <hr>
+
+                <li>
+                    <ul>
+                        <div class="float"><img src="./img/img/book_pen.gif" alt=""></div>
+                        <li class="adown">
+                            <a href="#"> 루바로 개편과 사이트 이용... <p1> 2017-09-20 </p1></a>
+                            <a href="#"> 루바로 개편과 사이트 이용... <p1> 2017-09-20 </p1> </a>
+                            <a href="#"> 루바로 개편과 사이트 이용... <p1> 2017-09-20 </p1> </a>
+                            <a href="#"> 루바로 개편과 사이트 이용... <p1> 2017-09-20 </p1> </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="case">
+            <ul>
+                <img src="./img/img/latest2.gif" alt="">
+                <a href="./html/board_list.html" class="more"> more ▶ </a>
+
+                <hr>
+
+                <li>
+                    <ul>
+                        <div class="float"><img src="./img/img/book_pen.gif" alt=""></div>
+                        <li class="adown">
+                            <a href="#"> 까스롱님의 선물인 보드카... <p1> 2017-09-20 </p1></a>
+                            <a href="#"> 까스롱님의 선물인 보드카... <p1> 2017-09-20 </p1> </a>
+                            <a href="#"> 까스롱님의 선물인 보드카... <p1> 2017-09-20 </p1> </a>
+                            <a href="#"> 까스롱님의 선물인 보드카... <p1> 2017-09-20 </p1> </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="case2">
+            <ul>
+                <img src="./img/img/latest3.gif" alt="">
+                <a href="#" class="more"> more ▶ </a>
+
+                <hr>
+
+                <img src="./img/img/bach.jpg" alt="">
+            </ul>
+        </section>
+
+        <section class="case3">
+            <ul>
+                <img src="./img/img/latest4.gif" alt="">
+
+
+                <div id="poto_box">
+
+                    <div>
+                        <img src="./img/img/img1.jpg" alt=""> <br>
+                        기타 페스티벌 4중주
+                    </div>
+
+                    <div>
+                        <img src="./img/img/img1.jpg" alt=""> <br>
+                        기타 페스티벌 4중주
+                    </div>
+
+                    <div>
+                        <img src="./img/img/img1.jpg" alt=""> <br>
+                        기타 페스티벌 4중주
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </main>
+    
+    <hr class="end">
+
+    <footer>
+        <div>
+            <img src="./img/img/logo_footer.gif" alt="">
+        </div>
+        <div>
+            서울시 강남구 삼성동 1234 우 : 1234-1234 <br>
+            TEL : 031-132-1234 Email : email@domain.com <br>
+            COPYTRIGHT⒞ 루바토 ALL RIGHTS RESERVED
+        </div>
+        
+        <p class="clear"></p>
+
+        <div class="img">
+            <img src="./img/img/facebook.gif" alt="">
+            <img src="./img/img/blog.gif" alt="">
+            <img src="./img/img/twitter.gif" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

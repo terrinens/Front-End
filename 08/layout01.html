@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01</title>
+    <link rel="stylesheet" href="./css/layout01.css">
+</head>
+
+<body>
+    <!-- 
+        layout : 한 페이지를 블락을 나누어서 처리
+            -header : 최상단, 회사로고, 메뉴 <<모든 페이지에서 적용>>
+                -jsp : 별도의 파일을 만들고 include를 사용해서 처리
+                -timeleaf : layout으로 처리
+                -React : 컴포넌트로 처리
+
+            -main : 컨텐츠 내용
+            -footer : 최하단, 회사주소, 전화번호, 사업자 등록 번호 <<모든 페이지에서 적용>>
+
+            -aside : 왼쪽, 오른쪽의 추가적인 메뉴
+            -nav : 메뉴를 처리 (검색 엔진에서 노출이 쉽게 된다.)
+            -section : 컨텐츠의 블락을 만듦
+            -article : 작은 컨텐츠
+     -->
+    <header>
+        상단 헤더
+        <nav>
+            상단 메뉴
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                좌측 메뉴
+            </nav>
+        </aside>
+
+        메인 컨텐츠
+        <section>
+            컨텐츠 1
+        </section>
+
+        <section>
+            컨텐츠 2
+        </section>
+
+        <section>
+            컨텐츠 3
+        </section>
+    </main>
+    <footer>
+        풋터
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    /* left: 300px;
+    top : 500px; */
+
+    background-color: red;
+
+    /*         키프레임5초  함수  무한반복  실행후 반대실행*/
+    animation: boxmove 5s infinite alternate;
+}
+
+/* keyframes 이름*/
+@keyframes boxmove {
+    /* 시작점 */
+    from {left: 0px;} 
+    /* 종료점 */
+    to {left: 300px;}
+}

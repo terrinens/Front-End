@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.float {
+    float: left;
+}
+
+body {
+    width: 1000px;
+    margin-left: 10px;
+}
+
+/* header,
+main,
+aside,
+footer,
+div,  
+section,
+a {
+    border: 1px dotted red;
+} */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+}
+
+header div.logo {
+    float: left;
+    padding-right: 35px;
+}
+
+.logo img {
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+
+header nav.topmenu {
+    position: absolute;
+    right: 3%;
+}
+
+header ul.menu {
+    position: relative;
+    left: 45px;
+
+    height: 70px;
+
+    margin-top: 35px;
+}
+
+header ul.menu ul {
+    position: absolute;
+    top: 5px;
+    right: 3%;
+}
+
+header ul.menu ul > a {
+    padding-left: 15px;
+    padding-right: 52px;
+
+    color: white;
+}
+
+
+/* 밑부터 main 관련 */
+
+/* 로그인 상자 */
+main aside.login_box {
+    width: 230px;
+
+    float: left;
+}
+
+main aside.login_box div.login_box{
+    width: 170px;
+    height: 100px;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+
+    background-color: whitesmoke;
+}
+
+main aside.login_box div.login {
+    width: 100px;
+}
+
+main aside.login_box span.s1 {
+    color: lawngreen;
+    font-weight: bolder;
+}
+
+main aside.login_box span.s2 {
+    color: black;
+    font-weight: bolder;
+}
+
+main aside.login_box .login {
+    float: left;
+}
+
+main aside.login_box .newbi {
+    font-size: 13px;
+}
+
+main aside.login_box .serch {
+    font-size: 10px;
+    color: gray;
+}
+
+main aside.login_box div.space {
+    height: 5px;
+
+    display: inline-block;
+}
+/* 로그인 상자 끝 */
+
+/* 방명록 */
+main aside.login_box div.ctext {
+    width: 170px;
+    height: 100px;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+
+    box-shadow: 3px 1px 10px gray;
+
+    background-color: whitesmoke;
+}
+
+div.ctext span.f1 {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+div.ctext ul {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+div.ctext ul > li {
+    list-style: disc;
+    color: aqua;
+}
+
+/* 방명록 끝 */
+
+/* main section 시작 */
+main section {
+    margin-left: 240px;
+}
+
+section li {
+    list-style: none;
+}
+
+section a.more {
+    float: right;
+}
+
+/* 공지사항, 자유게시판 시작 */
+main section.case {
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.case ul.link {
+    border: 1px dotted blue;
+    display: inline-block;
+}
+
+.case li.adown {
+    padding-left: 15px;
+    display: grid;
+}
+
+.adown a {
+    font-size: 14px;
+}
+
+.adown p1{
+    font-size: 10px;
+}
+/* 공지사항, 자유게시판 끝 */
+
+/* youtube 동영상 시작 */
+main section.case2 {
+    width: 380px;
+
+    position: absolute;
+    top: 365px;
+    left: 380px;
+
+    padding-left: 10px;
+}
+/* youtube 동영상 끝 */
+
+/* 포토 갤러리 시작 */
+main section.case3 {
+    margin-top: 20px;
+}
+
+.case3 div#poto_box {
+
+    width: 100%;
+    height: 200px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#poto_box div {
+    padding: 15px;
+}
+/* 포토 갤러리 끝 */
+/* main section 끝 */
+
+/* footer 시작 */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr.end {
+    margin-top: 100px;
+    margin-bottom: 1px;
+}
+
+footer div {
+    float: left;
+}
+
+footer div.img {
+    position: absolute;
+    right: 0px;   
+}
+/* footer 끝 */

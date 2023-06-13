@@ -1,0 +1,18 @@
+div {
+    width: 100px;;
+    height: 100px;
+
+    position: relative;
+
+    background-color: red;
+
+    animation: colorbox 5s infinite alternate;
+}
+
+@keyframes colorbox {
+    from {left: 0px; background-color: red; top: 0px;}
+    25% {left: 300px; background-color: orange; top: 0px;}
+    50% {left: 300px; background-color: yellow; top: 300px;}
+    75% {left: 0px; background-color: green; top: 300px;}
+    to {left: 0px; background-color: red; top: 0px;}
+}

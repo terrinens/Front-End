@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#warp {
+    /* div 자체를 중앙에 배치 */
+    /* div 박스의 widht가
+        100% 이면 움직일 공간이 없기에 margin도 움직이지 않는다. */
+    width: 90%;
+    
+    margin: 10px auto;
+    border: 1px solid red;
+
+    /* div 박스 내부에 아이템의 배치 */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+header, footer {
+    width: 90%;
+    height: 80px;
+
+    background-color: aquamarine;
+}
+
+main {
+    width: 90%;
+    height: 600px;
+
+    background-color: green;
+}

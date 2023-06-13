@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+header, aside, main, footer {
+    border: 1px solid red;
+}
+
+section {
+    border: 1px solid blue;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+
+    margin: 2px;
+}
+
+aside {
+    width: 175px;
+    /* height는 컨텐츠 내용에 따라서 자동으로 늘어나도록 처리 */
+    height: 398px;
+
+    position: sticky;
+    top: 10px;
+    
+    float: left;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    margin: 2px;
+}
+
+footer {
+    width: 800px;
+    height: 150px;
+
+    margin: 2px;
+}
+
+section {
+    width: auto;
+    height: 150px;
+    margin: 2px;
+    margin-left: 180px;
+}

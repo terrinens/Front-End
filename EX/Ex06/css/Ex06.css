@@ -1,0 +1,50 @@
+div.box {
+    width: 1000px;
+    height: 200px;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > div {
+    background-color: white;
+    width: 30%;
+    height: 90%;
+
+    margin: 10px;
+
+    border-radius: 10px;
+    border: 1px solid blue;
+
+    box-shadow: 1px 1px 1px gray;
+
+    z-index: 1;
+}
+
+#arr div{
+    float: left;
+}
+
+.box #img_box img{
+    height: 200px;
+    width: 100%;
+
+    z-index: 10;
+}
+
+.box #text_box {
+    height: 100%;
+    width: 44%;
+}
+
+#text_box p1 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#text_box p2 {
+    color: darkgray;
+    font-size: 15px;
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: #008000;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        /* 0px ~ 600px */
+        background-color: #ffff00; 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        /* 900px 이후 부터 작동됨 */
+        background-color: #ff0000; 
+    }
+}

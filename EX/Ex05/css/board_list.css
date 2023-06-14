@@ -178,9 +178,9 @@ section.free_text {
     display: flex;
     align-items: center;
 
-    position: absolute;
-    top: 327px;
-    right: 0;
+    position: relative;
+    top: -10px;
+    right: -450px;
 }
 
 .free_text table tr, td, th{
@@ -232,9 +232,9 @@ section.free_text {
 }
 
 .free_text div.list {
-    position: absolute;
-    top: 470px;
-    right: 0;
+    position: relative;
+    top: 0px;
+    right: -630px;
 }
 
 /* 자유게시판 끝 */

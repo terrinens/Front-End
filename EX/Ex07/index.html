@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 회원관리</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header class="c12">
+        쇼핑몰 회원관리 VER 1.0
+    </header>
+
+    <nav class="c12">
+        <mob class="c_m_9">
+            <div>
+                <a href="#">회원등록</a>
+            </div>
+            <div>
+                <a href="#">회원목록조회/수정</a>
+            </div>
+            <div>
+                <a href="#">회원매출조회</a>
+            </div>
+            <div>
+                <a href="#">홈으로</a>
+            </div>
+        </mob>
+    </nav>
+
+    <main class="c12">
+
+        <div class="page_info"> 쇼핑몰 회원 등록 </div>
+
+        <div class="coustmer_info">
+            <table>
+                <tr>
+                    <th> 회원번호(자동발생) </th>
+                    <td> <input type="text" name="coustmer_id"> </td>
+                </tr>
+                <tr>
+                    <th> 회원성명 </th>
+                    <td> <input type="text" name="coustmer_name"> </td>
+                </tr>
+                <tr>
+                    <th> 회원주소 </th>
+                    <td> <input type="text" name="coustmer_addr"> </td>
+                </tr>
+                <tr>
+                    <th> 가입일자 </th>
+                    <td> <input type="text" name="coustmer_in_date"> </td>
+                </tr>
+                <tr>
+                    <th> 고객등급[A:VIP, B:일반, C:직원] </th>
+                    <td> <input type="text" name="coustmer_class"> </td>
+                </tr>
+                <tr>
+                    <th> 도시코드 </th>
+                    <td> <input type="text" name="coustmer_local_cod"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button name="coustmer_new"> 등록 </button>
+                        <button name="coustmer_seach"> 조회 </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="c12">
+        <pl class="c12" id="p1"> HRDKOREA Copyright@2016 ALL right reserver. Humna Resources Development Serivce of
+            Korea</pl>
+    </footer>
+</body>
+
+</html>

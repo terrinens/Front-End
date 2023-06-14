@@ -1,0 +1,71 @@
+/* 자유 게시판 write 시작 */
+
+main .free_text_box {
+    height: 410px;
+
+    margin-top: 10px;
+    margin-left: 230px;
+    
+    border: 1px solid red;
+}
+
+.free_text_box div.top{
+    height: 40px;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: whitesmoke;
+}
+
+.free_text_box span#info {
+    padding-left: 130px;
+}
+
+.free_text div.list2 {
+    position: relative;
+    bottom: -20px;
+    right: -650px;
+}
+
+/* wirte 테이블 설정 시작 */
+
+.free_text table {
+    /* 
+    코드 실수로 불러온 css 파일 board_list에 table이
+    적용되어서 맞추기 위해 재정의 했으므로 건드리지 말것.
+    */
+    width: 100%;
+}
+
+.free_text div.table {
+    height: 80%;
+}
+
+.free_text div.table tr {
+    height: 30px;
+}
+
+.free_text div.table th {
+    text-align: center;
+    border-right: 1px solid gray;
+    width: 300px;
+}
+
+.free_text div.table td {
+    width: 700px;
+}
+
+.free_text div.table tr#tr1 {
+    height: 260px;
+}
+
+/* wirte 테이블 설정 끝 */
+
+/* 자유 게시판 write 끝 */

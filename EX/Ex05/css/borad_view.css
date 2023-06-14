@@ -1,3 +1,5 @@
+/* 자유 게시판 view 시작 */
+
 main .free_text_box {
     height: 410px;
 
@@ -8,11 +10,64 @@ main .free_text_box {
 }
 
 .free_text_box div.top{
-    height: 30px;
+    height: 40px;
 
     border-top: 1px solid gray;
+    padding-left: 10px;
 
-    justify-content: center;
+    display: flex;
+    align-items: center;
 
     background-color: whitesmoke;
 }
+
+.free_text_box span#info {
+    padding-left: 130px;
+}
+
+.free_text_box div.view_box {
+    text-align: left;
+
+    padding-top: 20px;
+    padding-left: 10px;
+
+    min-height: 150px;
+
+    overflow: scroll;
+}
+
+.free_text div.list2 {
+    position: relative;
+    bottom: -20px;
+    right: -570px;
+}
+
+.free_text div.comm {
+    height: 120px;
+    width: 100%;
+
+    border-top: 1px solid gray;
+
+    background-color: whitesmoke;
+    display: inline-block;
+}
+
+.free_text div.comm #img1 {
+    width: 100px;
+    margin: 10px;
+    margin-bottom: 65px;
+}
+
+.free_text div.comm #img2 {
+    margin-top: 10px;
+    width: 95px;
+}
+
+.free_text div.comm #input_box {
+    width: 67%;
+    height: 80%;
+
+    position: relative;
+    bottom: 50px;
+}
+/* 자유 게시판 view 끝 */

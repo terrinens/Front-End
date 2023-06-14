@@ -1,0 +1,166 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+
+header, main, footer {
+    border: 1px dotted red;
+}
+
+/* 헤더 시작 */
+header {
+    background-color: blue;
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+header div.menu {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+    
+    background-color: violet;
+}
+
+header div.menu li{
+    display: inline-block;
+    
+    margin: 30px;
+}
+
+header div.menu a{
+    color: white;
+    text-decoration: none;
+}
+/* 헤더 끝 */
+
+/* nav 시작 */
+nav {
+    min-height: 0px;
+    background-color: violet;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav div.menu {
+    justify-content: center;
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    margin: 30px;
+}
+
+nav div {
+    float: left;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* nav 끝 */
+
+/* 메인 시작 */
+main {
+    background-color: whitesmoke;
+}
+
+main div.page_info {
+    margin: 20px;
+    
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+main div.coustmer_info {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+main div.coustmer_info table, tr, th, td{
+    border: 1px solid gray;
+
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+main div.coustmer_info table {
+    width: 80%;
+}
+/* 메인 끝 */
+/* footer 시작 */
+footer {
+    background: linear-gradient(to right, blue, white);
+}
+
+footer #p1{
+    color: white;
+}
+/* footer 끝 */
+
+/* 600px 미만일때 스타일 적용 */
+[class*="c"] {
+    float: left;
+
+    width: 100%;
+
+    padding: 10px;
+}
+
+/* 600px 이상에서 스타일 적용  */ /* 600이상 ~ 1024 이하까지 적용됨 */
+@media only screen and (min-width : 600px){
+    /* 넓이가 768px 이상 데스크톱, 노트북 환경 설정 */
+.c_m_1 {width: 8.33%; float: left; padding: 15px;}
+.c_m_2 {width: 16.66%; float: left; padding: 15px;}
+.c_m_3 {width: 25.00%; float: left; padding: 15px;}
+/*  */
+.c_m_4 {width: 33.33%; float: left; padding: 15px;}
+.c_m_5 {width: 41.66%; float: left; padding: 15px;}
+.c_m_6 {width: 50.00%; float: left; padding: 15px;}
+/*  */
+.c_m_7 {width: 58.33%; float: left; padding: 15px;}
+.c_m_8 {width: 66.66%; float: left; padding: 15px;}
+.c_m_9 {width: 75.00%; float: left; padding: 15px;}
+/*  */
+.c_m_10 {width: 83.33%; float: left; padding: 15px;}
+.c_m_11 {width: 91.66%; float: left; padding: 15px;}
+.c_m_12 {width: 100%; float: left; padding: 15px;}
+
+}
+
+@media only screen and (min-width : 1024px) {
+ 
+/* width 100% 를 12등분(그리드) 해서 css를 셋팅 */
+.c1 {width: 8.33%; float: left; padding: 15px;}
+.c2 {width: 16.66%; float: left; padding: 15px;}
+.c3 {width: 25.00%; float: left; padding: 15px;}
+/*  */
+.c4 {width: 33.33%; float: left; padding: 15px;}
+.c5 {width: 41.66%; float: left; padding: 15px;}
+.c6 {width: 50.00%; float: left; padding: 15px;}
+/*  */
+.c7 {width: 58.33%; float: left; padding: 15px;}
+.c8 {width: 66.66%; float: left; padding: 15px;}
+.c9 {width: 75.00%; float: left; padding: 15px;}
+/*  */
+.c10 {width: 83.33%; float: left; padding: 15px;}
+.c11 {width: 91.66%; float: left; padding: 15px;}
+.c12 {width: 100%; float: left; padding: 15px;}
+}

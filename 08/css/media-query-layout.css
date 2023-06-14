@@ -1,0 +1,92 @@
+* {
+    margin: 0px; padding: 0px;
+
+    /* box-sizing의 기본값 
+       box안의 내용물의 기준으로 widht를 지정*/
+    /* box-sizing: content-box; */
+
+    /* box안의 border를 기준으로 widht를 지정 */
+    box-sizing: border-box;
+}
+
+/* width 100% 를 12등분(그리드) 해서 css를 셋팅 */
+.c1 {width: 8.33%; float: left; padding: 15px;}
+.c2 {width: 16.66%; float: left; padding: 15px;}
+.c3 {width: 25.00%; float: left; padding: 15px;}
+/*  */
+.c4 {width: 33.33%; float: left; padding: 15px;}
+.c5 {width: 41.66%; float: left; padding: 15px;}
+.c6 {width: 50.00%; float: left; padding: 15px;}
+/*  */
+.c7 {width: 58.33%; float: left; padding: 15px;}
+.c8 {width: 66.66%; float: left; padding: 15px;}
+.c9 {width: 75.00%; float: left; padding: 15px;}
+/*  */
+.c10 {width: 83.33%; float: left; padding: 15px;}
+.c11 {width: 91.66%; float: left; padding: 15px;}
+.c12 {width: 100%; float: left; padding: 15px;}
+
+header, aside, main, footer {
+    border: 1px solid red;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "돋움", "맑은 고딕";
+    font-size: 100%;
+}
+
+header {
+    height: 80px;
+    padding: 20px;
+    
+    background-color: aquamarine;
+    
+    text-align: center;
+}
+
+aside {
+    color: white;
+    
+    background-color: blue;
+    padding: 20px;
+}
+
+aside li {
+    padding: 20px;
+}
+
+main {
+    padding: 15px;
+}
+
+main p {
+    padding: 7px;
+}
+
+main #p1 {
+    line-height: 30px;
+}
+
+footer {
+    height: 60px;
+
+    background-color: blueviolet;
+
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+
+    /* class 이름이 c로 시작되는 모든 선택자 */
+    [class*= "c"] {
+        width: 100%;
+    } 
+
+    /* .c3, .c9 {
+        width: 100%;
+    } */
+}

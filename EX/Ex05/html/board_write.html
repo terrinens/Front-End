@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유 게시판 글쓰기</title>
+    <link rel="stylesheet" href="../css/board_list.css">
+    <link rel="stylesheet" href="../css/board_write.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="../index.html"><img src="../img/img/logo.png" alt=""></a></div>
+
+        <nav class="topmenu">
+            <a href="./index.html"> HOME </a> |
+            <a href="#"> LOGIN </a> |
+            <a href="#"> JOIN </a> |
+            <a href="#"> NOTICE </a>
+        </nav>
+
+        <ul class="menu">
+            <img src="../img/img/main_menu_bg.png" alt="">
+            <ul>
+                <a href="./board_list.html"> 자유 게시판 </a>
+
+                <a href="#"> 기타 연주 </a>
+
+                <a href="#"> 공통 구매 </a>
+
+                <a href="#"> 연주회 안내 </a>
+
+                <a href="#"> 회원 게시판 </a>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <aside class="login_box">
+            <!-- 로그인 박스 -->
+            <div class="login_box">
+                <span class="s1"> Member </span>
+                <span class="s2"> LOGIN </span>
+
+                <div class="login">
+                    <input type="text" name="id" size="9">
+                    <input type="text" name="pw" size="9">
+                </div>
+
+                <div class="login_butten">
+                    <a href="#"><img src="../img/img/btn_login.gif" alt=""></a>
+                </div>
+
+                <p class="clear"></p>
+
+                <a href="#" class="newbi"> 회원가입 </a>
+                <a href="#" class="serch">| 아이디/비빌번호 찾기 </a>
+            </div>
+
+            <!-- login인과 방명록 사이의 공간을 위한 div -->
+            <div class="space"></div>
+
+            <!-- 커뮤니티 -->
+            <div class="comm">
+                <img src="../img/img/sub_menu_bg.png" alt="">
+                <ul class="comm_list">
+                    <li>
+                        <a href="../html/board_list.html"> + 자유 게시판 </a>
+                        <a href="#"> + 방명록 </a>
+                        <a href="#"> + 공지사항 </a>
+                        <a href="#"> + 등업 요청 </a>
+                        <a href="#"> + 포토갤러리 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="other">
+                <a href="#"><img src="../img/img/banner1.png" alt=""></a>
+                <a href="#"><img src="../img/img/banner2.png" alt=""></a>
+                <a href="#"><img src="../img/img/banner3.png" alt=""></a>
+            </div>
+        </aside>
+
+        <section class="main">
+            <img src="../img/img/comm.gif" alt="">
+        </section>
+
+        <section class="free_text">
+            자유 게시판
+            <hr>
+            <div class="free_text_in">
+
+                <div class="free_text_box">
+                    <div class="top">
+                        글쓰기
+                    </div>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td><input type="text" name="name" size="15"></td>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                <td><input type="text" name="name" size="70"></td>
+                            </tr>
+                            <tr id="tr1">
+                                <th>내용</th>
+                                <td><input type="text" name="name" size="70" style="height: 240px;"></td>
+                            </tr>
+                            <tr>
+                                <th>업로드 파일</th>
+                                <td>
+                                    <input type="text" name="name" size="20">
+                                    <button name="select_file"> 파일 선택 </button>
+                                    선택된 파일 없음
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="list2">
+                        <a href="#"><img src="../img/img/ok.png" alt=""></a>
+                        <a href="../html/board_list.html"><img src="../img/img/list.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr class="end">
+
+    <footer>
+        <div>
+            <img src="../img/img/logo_footer.gif" alt="">
+        </div>
+        <div>
+            서울시 강남구 삼성동 1234 우 : 1234-1234 <br>
+            TEL : 031-132-1234 Email : email@domain.com <br>
+            COPYTRIGHT⒞ 루바토 ALL RIGHTS RESERVED
+        </div>
+
+        <p class="clear"></p>
+
+        <div class="img">
+            <img src="../img/img/facebook.gif" alt="">
+            <img src="../img/img/blog.gif" alt="">
+            <img src="../img/img/twitter.gif" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

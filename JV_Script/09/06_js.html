@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_js</title>
+</head>
+
+<body>
+    <script>
+        var num = true;
+        var obj = null;
+
+        document.write(typeof 100 + "<br />");
+        document.write(typeof 10.5 + "<br />");
+        document.write(typeof "홍길동" + "<br />");
+        document.write(typeof true + "<br />");
+        document.write(typeof [1, 2, 3] + "<br />");
+        document.write(typeof { name: '홍길동', age: 25 } + "<br />");
+        document.write("==========================<br>");
+        document.write(typeof num + "<br />");
+        document.write(typeof obj + "<br />");
+    </script>
+
+    <!-- 
+        배열 : 정수, 실수, 객체, boolean
+            ["홍길동", 20, true]
+
+        객체 : 필드 : 값, 필드 : 값, 메소드(함수)
+            {필드: 값, 필드: 값, 필드: 값}
+
+        JSON : 객체의 필드의 값만 뽑아옴.
+            {"필드":값, "필드":값}
+     -->
+</body>
+
+</html>

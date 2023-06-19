@@ -1,0 +1,28 @@
+div#smallImgs {
+    width: 420px;
+    margin: auto;
+}
+
+div#smallImgs ul {
+    list-style: none;
+}
+
+div#smallImgs li {
+    display: inline-block;
+}
+
+div#increaseImgs {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+div#increaseImgs img {
+    transform: translate(25%, 25%);
+}

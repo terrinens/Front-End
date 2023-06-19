@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex09</title>
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <script></script>
+</head>
+
+<body>
+    <!-- 
+        함수, 배열을 이용해서 작은 이미지를 클릭시 원본 이미지를 출력후 클릭시 사라짐.
+
+        블락태그는 기본 widht : 100% | 상위 부모 크기에 대한, 출력이 아래로 출력
+        인라인 태그는 컨텐츠에 맞게 width 지정, 라인으로 출력
+     -->
+
+    <!-- 작은 이미지 출력 부분 -->
+    <div class="row">
+        <ul>
+            <li>
+                <img src="./img/tree-1-thumb.jpg" class="pic" data-src="./img/tree-1.jpg">
+            </li>
+
+            <li>
+                <img src="./img/tree-2-thumb.jpg" class="pic" data-src="./img/tree-2.jpg">
+            </li>
+
+            <li>
+                <img src="./img/tree-3-thumb.jpg" class="pic" data-src="./img/tree-3.jpg">
+            </li>
+
+            <li>
+                <img src="./img/tree-4-thumb.jpg" class="pic" data-src="./img/tree-4.jpg">
+            </li>
+
+            <li>
+                <img src="./img/tree-5-thumb.jpg" class="pic" data-src="./img/tree-5.jpg">
+            </li>
+
+            <li>
+                <img src="./img/tree-6-thumb.jpg" class="pic" data-src="./img/tree-6.jpg">
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- 큰이미지 출력 부분 : 기본 페이지 로드시 출력 안되도록 함, 작은 이미지 클릭시 출력 -->
+
+    <div id="lightbox">
+        <img src="./img/tree-1.jpg" class="pic" id="lightboxImage">
+    </div>
+
+    <!-- 자바 스크립트 처리 블락 -->
+    <script src="./js/lightbox.js"></script>
+</body>
+
+</html>

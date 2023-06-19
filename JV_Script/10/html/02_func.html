@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_func</title>
+    <script src="../js/02_func/02_func_01.js"></script>
+    <link rel="stylesheet" href="../css/02_func.css">
+
+</head>
+
+<body>
+    <!-- 
+        body의 앨리먼트 이벤트에 따라서 함수 호출
+     -->
+    <button type="button" onclick="printMsg('홍길동', 21)">학생 정보 출력</button>
+    <a href="#" onmouseover="printMsg('이순신', 50)">학생 정보 출력</a>
+    <p />
+    <hr>
+
+    <h3>콘솔에 출력 : console.log</h3>
+    <hr>
+    <div class="a1" ondblclick="printMsg2('')">더블 클릭시 출력 : 콘솔에 출력</div>
+
+    <h3>경고창을 띄워서 출력 : alert</h3>
+    <hr>
+    <div class="a2" ondblclick="printMsg3('신사임당', 40)">
+        <img src="/img/pic/pic1.jpg" class="a1">
+    </div>
+</body>
+
+</html>

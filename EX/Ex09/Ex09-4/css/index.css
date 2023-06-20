@@ -1,0 +1,29 @@
+div#listImgBox {
+    width: 450px;
+    margin: auto;
+}
+
+div#listImgBox ul {
+    list-style: none;
+}
+
+div#listImgBox li {
+    display: inline-block;
+}
+
+div#increaseImgBox {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+div#increaseImgBox img {
+    transform: translate(25%, 25%);
+}

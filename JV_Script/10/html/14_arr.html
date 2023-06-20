@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14_func</title>
-    <script src="../js/14_func/14_func.js"></script>
-</head> 
+    <script>
+        // <!-- l배열에 값이 비어 있을 경우 연산이 되지 않음 -->
+        var com = [95, 88, , 72, 68, , 99, 82, 78, 85];
+
+        function printArr() {
+            var sum = 0;
+            for (let i = 0; i < com.length; i++) {
+                sum += com[i];
+            }
+            document.write("배열에 저장된 총합은 : " + sum);
+        }
+
+        printArr()
+    </script>
+</head>
+
 <body>
     <!-- l배열에 값이 비어 있을 경우 연산이 되지 않음 -->
 </body>
+
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_js</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    
+        <script>
+    
+            $(document).ready(function () {
+                // JQuery 코드 블락
+                $("#delButton").click(function () {
+                    $("p").hide();
+                });
+    
+                $("#addButton").click(function () {
+                    $("p").show();
+                });
+            });
+        </script>
+    
+    <!-- <script>
+        function hide() {
+            document.getElementById("h").style.display="none";
+        }
+    </script> -->
+</head>
+
+<body>
+    <p id="h">메세지 : 제이 쿼리를 공부 합니다.</p>
+    <button type="button" id="delButton">메세지 삭제 </button>
+    <button type="button" id="addButton">메세지 추가 </button>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_obj</title>
+</head>
+<body>
+    <p id="upSpeed">  </p>
+    <p id="downSpeed">  </p>
+
+    <script>
+        var car = {
+            name : "Sonata",
+            speed : 50,
+            color : "white",
+            speedUp : function () {
+                return this.speed + 10;
+            },
+            speedDown : function () {
+                return this.speed - 10;
+            }
+        };
+
+        var upSpeed = document.getElementById("upSpeed");
+        var downSpeed = document.getElementById("downSpeed");
+
+        upSpeed.textContent = "속도 증가 : " + car.speedUp();
+        downSpeed.textContent = "속도 감소 : " + car.speedDown();
+    </script>
+</body>
+</html>

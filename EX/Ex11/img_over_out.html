@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img_over_out</title>
+    <style>
+        #container {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/easys-1.jpg" id="cover" class="cover_class" data-chage="./images/easys-2.jpg">
+    </div>
+
+    <script>
+        // 자바스크립트를 사용해서 easys-1.jpg에 마우스를 호버시 easys-2.jpg 출력
+        // 마우스를 out 햇을시 본래 이미지로 출력
+
+        var container = document.getElementById("container");
+        var cover = document.getElementById("cover");
+        var origin = cover.getAttribute("src");
+
+        container.onmouseover = function () {
+            var change = cover.getAttribute("data-chage");
+            cover.setAttribute("src", change);
+        }
+
+        container.onmouseout = function () {
+            cover.setAttribute("src", origin);
+        }
+        // var originPic = cover.getAttribute("src");
+        // var changePic = cover.getAttribute("data-chage");
+        // cover.addEventListener("mouseover", changePic);
+        // cover.addEventListener("mouseout", originPic);
+
+    </script>
+</body>
+</html>

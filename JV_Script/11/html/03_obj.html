@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_obj</title>
+</head>
+
+<body>
+    <p id="carName"> </p>
+    <p id="carColor"> </p>
+    <p id="carSpeed"> </p>
+
+    <script>
+        var car = {
+            name : "Sonata", 
+            speed : 50,
+            color: "White",
+            start : function () {
+                return this.speed + 10;
+            }
+        }
+
+        // 엘리먼트를 객체화 해서 사용
+        var cName = document.getElementById("carName");
+        var colName = document.getElementById("carColor");
+        var cSpeed = document.getElementById("carSpeed");
+
+        cName.innerHTML = car.name;
+        colName.innerHTML = car.color;
+        cSpeed.innerHTML = car.start();
+    </script>
+</body>
+
+</html>

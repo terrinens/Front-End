@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_opne_cloes</title>
+    <style>
+        #toc-content {
+            display: none;
+        }
+
+        #toc-content li {
+            margin-left: 30px;
+
+            line-height: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    목차 [ <span id="ol_list"> 보이기 </span> ]
+    <ol id="toc-content">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+
+    <script>
+        // ol은 기본적으로 none or hiden, 목차 보이기 클릭시 block
+        var ol_list = document.getElementById("ol_list");
+        var toc_content = document.getElementById("toc-content");
+
+        ol_list.onclick = function () {
+            if (toc_content.style.display != "inline") {
+
+                toc_content.style.display = "inline";
+                ol_list.innerText = "숨기기"
+            } else {
+                toc_content.style.display = "none";
+                ol_list.innerText = "보이기";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

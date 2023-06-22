@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_jq</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+
+            margin-left: 5px;
+            background: yellow;
+        }
+
+        .box {
+            background: red;
+        }
+    </style>
+    <script>
+        var xWidth = 100;
+        var yHeight = 100;
+
+        $(document).ready(function () {
+            $("div").click(function () {
+                $(this).width(xWidth).addClass("box");
+                $(this).height(yHeight).addClass("box");
+
+                xWidth = xWidth - 10;
+                yHeight = yHeight - 10;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>박스 1</div>
+    <div>박스 2</div>
+    <div>박스 3</div>
+    <div>박스 4</div>
+    <div>박스 5</div>
+</body>
+
+</html>

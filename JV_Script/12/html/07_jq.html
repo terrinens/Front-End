@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_jq</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button.add").click(function(){
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+
+            $("button.remove").click(function(){
+                    $("h1, h2, p").removeClass("blue");
+                    $("div").removeClass("important");
+            });
+        });
+    </script>
+
+    <style>
+        .important {
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        .blue { /* JQuery를 사용해서 body내의 엘리먼트에 적용함. */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML1</h1>
+    <h2>CSS3</h2>
+    <p>자바스크립트</p>
+    <div>제이쿼리</div> <br>
+
+    <button type="button" class="add">css 적용</button>
+    <button type="button" class="remove">css 적용 해제</button>
+
+    <!-- 
+        JQuery 에서 CSS 컨트롤
+            -addClass() : 요소(element)에 class를 추가함
+            -removeClass() : 요소(element)에 class를 제거함
+
+            -toggleclass() : 요소에 class를 추가/제거를 계속 반복함
+
+            -css() : 선택한 요소의 styal 속성을 설정하거나 반환한다.
+            -with() : 가로 크기를 반환(margin, padding, border 제외됨))
+            -height() : 세로 크기를 반환(margin, padding, border 제외됨))
+     -->
+</body>
+</html>

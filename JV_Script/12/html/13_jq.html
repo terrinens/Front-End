@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_jq</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready (function () {
+            $("button.hide").click (function () {
+                $("img.pic1").hide ("slow");
+            });
+
+            $("button.show").click (function () {
+                $("img.pic1").show ("fast");
+            });
+
+            $("button.toggle").click (function () {
+                $("img.pic1").toggle (2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="hide">숨기기</button>
+    <button class="show">보이기</button>
+    <button class="toggle">숨기기/보이기</button>
+    <p />
+    <img src="../img/11_jq/pic1.jpg" class="pic1">
+</body>
+</html>

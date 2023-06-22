@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_jq</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <style>
+        div#slide, div#flip {
+            background-color: azure;
+
+            width: 500px;
+            border: 1px solid gray;
+
+            text-align: center;
+        }
+
+        div#panel {
+            background-color: yellowgreen;
+            width: 500px;
+            height: 200px;
+            border: 1px solid gray;
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+    <script>
+        $(document).ready (function () {
+            $("#slide").click (function () {
+                $("#panel").slideUp ("slow");
+            });
+
+            $("#flip").click (function () {
+                $("#panel").slideToggle (4000);
+            });
+
+            $("button#stop").click (function () {
+                $("#panel").stop();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="slide">[오늘의 공지사항]</div>
+    <div id="panel">오늘은 jQuery 프로그램을 학습합니다.<br>
+        예제를 작성한 후 실행해보세요.</div>
+    <div id="flip">Toggle slide</div>
+    <p></p>
+    <button id="stop">Stop sliding</button </body>
+
+</html>

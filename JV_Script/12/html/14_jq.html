@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_jq</title>
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready (function () {
+            $("#fadeOut").click (function () {
+                $("#pic1").fadeOut();
+            });
+
+            $("#fadeIn").click (function () {
+                $("#pic1").fadeIn();
+            });
+
+            $("#fadeToggle").click (function () {
+                $("#pic1").fadeToggle();
+            });
+
+            $("#opacity50").click (function () {
+                $("#pic1").fadeTo("slow", 0.5);
+            });
+
+            $("#opacity90").click (function () {
+                $("#pic1").fadeTo("slow", 0.9);
+            });
+
+            $("#opacity00").click (function () {
+                $("#pic1").fadeTo("slow", 0.0);
+            });
+
+            
+        });
+    </script>
+</head>
+<body>
+    <button id="fadeOut">fadeOut</button>
+    <button id="fadeIn">fadeIn</button>
+    <button id="fadeToggle">fadeToggle</button>
+    <button id="opacity50">opacity 50%</button>
+    <button id="opacity90">opacity 90%</button>
+    <button id="opacity00">opacity 00%</button>
+    <p />
+    <img src="../img/11_jq/pic1.jpg" id="pic1">
+</body>
+</html>
